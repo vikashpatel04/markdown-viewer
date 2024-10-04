@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Dark gray for dark mode */
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: #e5e7eb; /* Light gray for light mode */
+}
+
+/* Dark mode scrollbar */
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Darker gray */
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-track {
+  background-color: #1f2937; /* Darker gray */
+}
+
+
+/* Custom Markdown styles for dark mode */
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
+  color: #E5E7EB; /* Light gray color for headings */
+}
+
+.dark .prose a {
+  color: #93C5FD; /* Light blue color for links */
+}
+
+/* Additional dark mode styling for lists, paragraphs, etc. */
+.dark .prose p,
+.dark .prose li {
+  color: #D1D5DB; /* Slightly lighter gray for paragraphs and list items */
+}
