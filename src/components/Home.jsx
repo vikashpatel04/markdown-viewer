@@ -30,7 +30,7 @@ const Home = ({ markdownText, setMarkdownText }) => {
             rel="noopener noreferrer"
             className="text-blue-500 dark:text-blue-300 hover:underline"
           >
-            www.vikash-patel.tech
+            vikash-patel.tech
           </a>
         </p>
       </div>
